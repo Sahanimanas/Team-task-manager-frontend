@@ -12,6 +12,7 @@ import {
   CircleDot,
   BarChart3,
 } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 import { AppShell } from "@/components/AppShell";
 import { api } from "@/lib/api";
@@ -77,7 +78,7 @@ function Stat({
   tone = "neutral",
   footer,
 }: {
-  icon: React.ComponentType<{ className?: string; strokeWidth?: number }>;
+  icon: LucideIcon;
   label: string;
   value: number;
   sub: string;
